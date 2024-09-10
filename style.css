@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=);
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .image {
+    background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo.jpg?w=2210&quality=70);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.rtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rtext p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 24px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1, .b2, .b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://wallpapers.com/images/featured/beautiful-scenery-wnxju2647uqrcccv.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.b1 h1 {
+    padding: 30px;
+}
+
+.b1 p {
+    color: white;
+    padding: 15px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    text-align: center;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://t3.ftcdn.net/jpg/03/36/97/58/360_F_336975809_VvYkV1QZX2E8igeS3kYpcBGiMcK6zWpL.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .up h1, .b2 .up p {
+    padding: 15px;
+    color: white;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://wallpapers.com/images/hd/natural-scenery-pictures-736-x-1308-2yckka60jpvm2q4e.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://media.istockphoto.com/id/1176754076/photo/laptop-computer-with-magnifying-glass-concept-of-search.jpg?s=612x612&w=0&k=20&c=NmTpls1wT7tGZWnQosof-BbsYUy9O5Daai3E35KtY-A=);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.b3 .overlay {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.6); 
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+}
+
+.b3 .overlay p {
+    padding: 1.2vh;
+    text-align: right;
+}
+
+@media(max-width: 700px) {
+    .rtext {
+        flex-direction: column;
+    }
+
+    .b3 .overlay {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 .up {
+        min-height: 30vh;
+    }
+}
