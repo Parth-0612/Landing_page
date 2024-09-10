@@ -46,16 +46,6 @@ html, body {
     font-size: 4vw;
 }
 
-.text .image {
-    background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo.jpg?w=2210&quality=70);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 220px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-}
-
 .rtext {
     display: flex;
     flex-direction: column;
